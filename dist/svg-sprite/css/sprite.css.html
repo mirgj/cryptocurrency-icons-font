@@ -1,0 +1,3330 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG CSS sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block;background-size:512px 480px!important}</style>
+
+<!--
+
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite.
+
+-->
+
+<style type="text/css">
+.crypto-icon.act {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ada {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.adx {
+	background: url("svg/sprite.css-90e0b851.svg") 0 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ae {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.aion {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.amp {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ant {
+	background: url("svg/sprite.css-90e0b851.svg") 0 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ardr {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ark {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ast {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.atm {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bat {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bay {
+	background: url("svg/sprite.css-90e0b851.svg") 0 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bcc {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bch {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bcn {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bco {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bdl {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bela {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.blcn {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.blk {
+	background: url("svg/sprite.css-90e0b851.svg") 0 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.block {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bnb {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bnt {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bq {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bqx {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.btc {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.btcd {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.btcz {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.btg {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.btm {
+	background: url("svg/sprite.css-90e0b851.svg") 0 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.bts {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.btx {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.burst {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.cdn {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.clam {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.cloak {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.cnd {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.cnx {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.cny {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.cred {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.crpt {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.cvc {
+	background: url("svg/sprite.css-90e0b851.svg") 0 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.dash {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.dat {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.data {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.dbc {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.dcn {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.dcr {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.dent {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.dgb {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.dgd {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.doge {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.drgn {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.edg {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.edoge {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.elf {
+	background: url("svg/sprite.css-90e0b851.svg") 0 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ella {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.emc {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.emc2 {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.eng {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.eos {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.etc {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.eth {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ethos {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.etn {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.etp {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.eur {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.evx {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.exmo {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.exp {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.fair {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.fct {
+	background: url("svg/sprite.css-90e0b851.svg") 0 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.fil {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.fldc {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.flo {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ftc {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.fun {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.game {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gas {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gbp {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gbx {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gbyte {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gno {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gnt {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.grc {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.grs {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gup {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gvt {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.gxs {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.hpb {
+	background: url("svg/sprite.css-90e0b851.svg") 0 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.hsr {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.huc {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.hush {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.icn {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.icx {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ignis {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ins {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.iop {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.iost {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.jpy {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.kcs {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.kin {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.kmd {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.knc {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.krb {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.lbc {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.link {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.lkk {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.lrc {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.lsk {
+	background: url("svg/sprite.css-90e0b851.svg") 0 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ltc {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.maid {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.mana {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.mcap {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.mco {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.med {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.miota {
+	background: url("svg/sprite.css-90e0b851.svg") 0 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.mkr {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.mln {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.mnx {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.mona {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.mtl {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.music {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.nas {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.nav {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ndz {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.nebl {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.neo {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.neos {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ngc {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.nlc2 {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.nlg {
+	background: url("svg/sprite.css-90e0b851.svg") 0 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.nmc {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.nxs {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.nxt {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.omg {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.omni {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ost {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ox {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.pac {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.part {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.pasl {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.pay {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.pink {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.pirl {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.pivx {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.plr {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.poe {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.pot {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.powr {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ppc {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ppp {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ppt {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.prl {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.pura {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.qash {
+	background: url("svg/sprite.css-90e0b851.svg") 0 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.qiwi {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.qlc {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.qsp {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.qtum {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rads {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rcn {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rdd {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rdn {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rep {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.req {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rhoc {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ric {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rise {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rlc {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rpx {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.rub {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.salt {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.san {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.sbd {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.sberbank {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.sc {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.sky {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.smart {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.sngls {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.snt {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.sphtx {
+	background: url("svg/sprite.css-90e0b851.svg") 0 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.srn {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.start {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.steem {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.storj {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.storm {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.strat {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.sub {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.sys {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.taas {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.tau {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.tix {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.tkn {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.tnc {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.trig {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.trx {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.tzc {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ubq {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.usd {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.usdt {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.ven {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.veri {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.via {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.vivo {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 64.28571428571429% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.vrc {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 71.42857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.vtc {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 78.57142857142857% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.wabi {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 85.71428571428571% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.waves {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 92.85714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.wax {
+	background: url("svg/sprite.css-90e0b851.svg") 0 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.wtc {
+	background: url("svg/sprite.css-90e0b851.svg") 6.666666666666667% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xbc {
+	background: url("svg/sprite.css-90e0b851.svg") 13.333333333333334% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xcp {
+	background: url("svg/sprite.css-90e0b851.svg") 20% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xdn {
+	background: url("svg/sprite.css-90e0b851.svg") 26.666666666666668% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xem {
+	background: url("svg/sprite.css-90e0b851.svg") 33.333333333333336% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xlm {
+	background: url("svg/sprite.css-90e0b851.svg") 40% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xmg {
+	background: url("svg/sprite.css-90e0b851.svg") 46.666666666666664% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xmr {
+	background: url("svg/sprite.css-90e0b851.svg") 53.333333333333336% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xmy {
+	background: url("svg/sprite.css-90e0b851.svg") 60% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xp {
+	background: url("svg/sprite.css-90e0b851.svg") 66.66666666666667% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xpa {
+	background: url("svg/sprite.css-90e0b851.svg") 73.33333333333333% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xpm {
+	background: url("svg/sprite.css-90e0b851.svg") 80% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xrb {
+	background: url("svg/sprite.css-90e0b851.svg") 86.66666666666667% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xrp {
+	background: url("svg/sprite.css-90e0b851.svg") 93.33333333333333% 100% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xtz {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 0 no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xuc {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 7.142857142857143% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xvc {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 14.285714285714286% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xvg {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 21.428571428571427% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.xzc {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 28.571428571428573% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.zcl {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 35.714285714285715% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.zec {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 42.857142857142854% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.zen {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 50% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+.crypto-icon.zrx {
+	background: url("svg/sprite.css-90e0b851.svg") 100% 57.142857142857146% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG CSS sprite preview</h1>
+			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+		</header>
+		<section>
+
+<!--
+
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+
+-->
+
+			<ul>
+				<li title="act">
+					<div class="icon-box">
+
+						<!-- act -->
+						<i class="crypto-icon.act">act</i>
+
+					</div>
+					<h2>act</h2>
+				</li>
+				<li title="ada">
+					<div class="icon-box">
+
+						<!-- ada -->
+						<i class="crypto-icon.ada">ada</i>
+
+					</div>
+					<h2>ada</h2>
+				</li>
+				<li title="adx">
+					<div class="icon-box">
+
+						<!-- adx -->
+						<i class="crypto-icon.adx">adx</i>
+
+					</div>
+					<h2>adx</h2>
+				</li>
+				<li title="ae">
+					<div class="icon-box">
+
+						<!-- ae -->
+						<i class="crypto-icon.ae">ae</i>
+
+					</div>
+					<h2>ae</h2>
+				</li>
+				<li title="aion">
+					<div class="icon-box">
+
+						<!-- aion -->
+						<i class="crypto-icon.aion">aion</i>
+
+					</div>
+					<h2>aion</h2>
+				</li>
+				<li title="amp">
+					<div class="icon-box">
+
+						<!-- amp -->
+						<i class="crypto-icon.amp">amp</i>
+
+					</div>
+					<h2>amp</h2>
+				</li>
+				<li title="ant">
+					<div class="icon-box">
+
+						<!-- ant -->
+						<i class="crypto-icon.ant">ant</i>
+
+					</div>
+					<h2>ant</h2>
+				</li>
+				<li title="ardr">
+					<div class="icon-box">
+
+						<!-- ardr -->
+						<i class="crypto-icon.ardr">ardr</i>
+
+					</div>
+					<h2>ardr</h2>
+				</li>
+				<li title="ark">
+					<div class="icon-box">
+
+						<!-- ark -->
+						<i class="crypto-icon.ark">ark</i>
+
+					</div>
+					<h2>ark</h2>
+				</li>
+				<li title="ast">
+					<div class="icon-box">
+
+						<!-- ast -->
+						<i class="crypto-icon.ast">ast</i>
+
+					</div>
+					<h2>ast</h2>
+				</li>
+				<li title="atm">
+					<div class="icon-box">
+
+						<!-- atm -->
+						<i class="crypto-icon.atm">atm</i>
+
+					</div>
+					<h2>atm</h2>
+				</li>
+				<li title="bat">
+					<div class="icon-box">
+
+						<!-- bat -->
+						<i class="crypto-icon.bat">bat</i>
+
+					</div>
+					<h2>bat</h2>
+				</li>
+				<li title="bay">
+					<div class="icon-box">
+
+						<!-- bay -->
+						<i class="crypto-icon.bay">bay</i>
+
+					</div>
+					<h2>bay</h2>
+				</li>
+				<li title="bcc">
+					<div class="icon-box">
+
+						<!-- bcc -->
+						<i class="crypto-icon.bcc">bcc</i>
+
+					</div>
+					<h2>bcc</h2>
+				</li>
+				<li title="bch">
+					<div class="icon-box">
+
+						<!-- bch -->
+						<i class="crypto-icon.bch">bch</i>
+
+					</div>
+					<h2>bch</h2>
+				</li>
+				<li title="bcn">
+					<div class="icon-box">
+
+						<!-- bcn -->
+						<i class="crypto-icon.bcn">bcn</i>
+
+					</div>
+					<h2>bcn</h2>
+				</li>
+				<li title="bco">
+					<div class="icon-box">
+
+						<!-- bco -->
+						<i class="crypto-icon.bco">bco</i>
+
+					</div>
+					<h2>bco</h2>
+				</li>
+				<li title="bdl">
+					<div class="icon-box">
+
+						<!-- bdl -->
+						<i class="crypto-icon.bdl">bdl</i>
+
+					</div>
+					<h2>bdl</h2>
+				</li>
+				<li title="bela">
+					<div class="icon-box">
+
+						<!-- bela -->
+						<i class="crypto-icon.bela">bela</i>
+
+					</div>
+					<h2>bela</h2>
+				</li>
+				<li title="blcn">
+					<div class="icon-box">
+
+						<!-- blcn -->
+						<i class="crypto-icon.blcn">blcn</i>
+
+					</div>
+					<h2>blcn</h2>
+				</li>
+				<li title="blk">
+					<div class="icon-box">
+
+						<!-- blk -->
+						<i class="crypto-icon.blk">blk</i>
+
+					</div>
+					<h2>blk</h2>
+				</li>
+				<li title="block">
+					<div class="icon-box">
+
+						<!-- block -->
+						<i class="crypto-icon.block">block</i>
+
+					</div>
+					<h2>block</h2>
+				</li>
+				<li title="bnb">
+					<div class="icon-box">
+
+						<!-- bnb -->
+						<i class="crypto-icon.bnb">bnb</i>
+
+					</div>
+					<h2>bnb</h2>
+				</li>
+				<li title="bnt">
+					<div class="icon-box">
+
+						<!-- bnt -->
+						<i class="crypto-icon.bnt">bnt</i>
+
+					</div>
+					<h2>bnt</h2>
+				</li>
+				<li title="bq">
+					<div class="icon-box">
+
+						<!-- bq -->
+						<i class="crypto-icon.bq">bq</i>
+
+					</div>
+					<h2>bq</h2>
+				</li>
+				<li title="bqx">
+					<div class="icon-box">
+
+						<!-- bqx -->
+						<i class="crypto-icon.bqx">bqx</i>
+
+					</div>
+					<h2>bqx</h2>
+				</li>
+				<li title="btc">
+					<div class="icon-box">
+
+						<!-- btc -->
+						<i class="crypto-icon.btc">btc</i>
+
+					</div>
+					<h2>btc</h2>
+				</li>
+				<li title="btcd">
+					<div class="icon-box">
+
+						<!-- btcd -->
+						<i class="crypto-icon.btcd">btcd</i>
+
+					</div>
+					<h2>btcd</h2>
+				</li>
+				<li title="btcz">
+					<div class="icon-box">
+
+						<!-- btcz -->
+						<i class="crypto-icon.btcz">btcz</i>
+
+					</div>
+					<h2>btcz</h2>
+				</li>
+				<li title="btg">
+					<div class="icon-box">
+
+						<!-- btg -->
+						<i class="crypto-icon.btg">btg</i>
+
+					</div>
+					<h2>btg</h2>
+				</li>
+				<li title="btm">
+					<div class="icon-box">
+
+						<!-- btm -->
+						<i class="crypto-icon.btm">btm</i>
+
+					</div>
+					<h2>btm</h2>
+				</li>
+				<li title="bts">
+					<div class="icon-box">
+
+						<!-- bts -->
+						<i class="crypto-icon.bts">bts</i>
+
+					</div>
+					<h2>bts</h2>
+				</li>
+				<li title="btx">
+					<div class="icon-box">
+
+						<!-- btx -->
+						<i class="crypto-icon.btx">btx</i>
+
+					</div>
+					<h2>btx</h2>
+				</li>
+				<li title="burst">
+					<div class="icon-box">
+
+						<!-- burst -->
+						<i class="crypto-icon.burst">burst</i>
+
+					</div>
+					<h2>burst</h2>
+				</li>
+				<li title="cdn">
+					<div class="icon-box">
+
+						<!-- cdn -->
+						<i class="crypto-icon.cdn">cdn</i>
+
+					</div>
+					<h2>cdn</h2>
+				</li>
+				<li title="clam">
+					<div class="icon-box">
+
+						<!-- clam -->
+						<i class="crypto-icon.clam">clam</i>
+
+					</div>
+					<h2>clam</h2>
+				</li>
+				<li title="cloak">
+					<div class="icon-box">
+
+						<!-- cloak -->
+						<i class="crypto-icon.cloak">cloak</i>
+
+					</div>
+					<h2>cloak</h2>
+				</li>
+				<li title="cnd">
+					<div class="icon-box">
+
+						<!-- cnd -->
+						<i class="crypto-icon.cnd">cnd</i>
+
+					</div>
+					<h2>cnd</h2>
+				</li>
+				<li title="cnx">
+					<div class="icon-box">
+
+						<!-- cnx -->
+						<i class="crypto-icon.cnx">cnx</i>
+
+					</div>
+					<h2>cnx</h2>
+				</li>
+				<li title="cny">
+					<div class="icon-box">
+
+						<!-- cny -->
+						<i class="crypto-icon.cny">cny</i>
+
+					</div>
+					<h2>cny</h2>
+				</li>
+				<li title="cred">
+					<div class="icon-box">
+
+						<!-- cred -->
+						<i class="crypto-icon.cred">cred</i>
+
+					</div>
+					<h2>cred</h2>
+				</li>
+				<li title="crpt">
+					<div class="icon-box">
+
+						<!-- crpt -->
+						<i class="crypto-icon.crpt">crpt</i>
+
+					</div>
+					<h2>crpt</h2>
+				</li>
+				<li title="cvc">
+					<div class="icon-box">
+
+						<!-- cvc -->
+						<i class="crypto-icon.cvc">cvc</i>
+
+					</div>
+					<h2>cvc</h2>
+				</li>
+				<li title="dash">
+					<div class="icon-box">
+
+						<!-- dash -->
+						<i class="crypto-icon.dash">dash</i>
+
+					</div>
+					<h2>dash</h2>
+				</li>
+				<li title="dat">
+					<div class="icon-box">
+
+						<!-- dat -->
+						<i class="crypto-icon.dat">dat</i>
+
+					</div>
+					<h2>dat</h2>
+				</li>
+				<li title="data">
+					<div class="icon-box">
+
+						<!-- data -->
+						<i class="crypto-icon.data">data</i>
+
+					</div>
+					<h2>data</h2>
+				</li>
+				<li title="dbc">
+					<div class="icon-box">
+
+						<!-- dbc -->
+						<i class="crypto-icon.dbc">dbc</i>
+
+					</div>
+					<h2>dbc</h2>
+				</li>
+				<li title="dcn">
+					<div class="icon-box">
+
+						<!-- dcn -->
+						<i class="crypto-icon.dcn">dcn</i>
+
+					</div>
+					<h2>dcn</h2>
+				</li>
+				<li title="dcr">
+					<div class="icon-box">
+
+						<!-- dcr -->
+						<i class="crypto-icon.dcr">dcr</i>
+
+					</div>
+					<h2>dcr</h2>
+				</li>
+				<li title="dent">
+					<div class="icon-box">
+
+						<!-- dent -->
+						<i class="crypto-icon.dent">dent</i>
+
+					</div>
+					<h2>dent</h2>
+				</li>
+				<li title="dgb">
+					<div class="icon-box">
+
+						<!-- dgb -->
+						<i class="crypto-icon.dgb">dgb</i>
+
+					</div>
+					<h2>dgb</h2>
+				</li>
+				<li title="dgd">
+					<div class="icon-box">
+
+						<!-- dgd -->
+						<i class="crypto-icon.dgd">dgd</i>
+
+					</div>
+					<h2>dgd</h2>
+				</li>
+				<li title="doge">
+					<div class="icon-box">
+
+						<!-- doge -->
+						<i class="crypto-icon.doge">doge</i>
+
+					</div>
+					<h2>doge</h2>
+				</li>
+				<li title="drgn">
+					<div class="icon-box">
+
+						<!-- drgn -->
+						<i class="crypto-icon.drgn">drgn</i>
+
+					</div>
+					<h2>drgn</h2>
+				</li>
+				<li title="edg">
+					<div class="icon-box">
+
+						<!-- edg -->
+						<i class="crypto-icon.edg">edg</i>
+
+					</div>
+					<h2>edg</h2>
+				</li>
+				<li title="edoge">
+					<div class="icon-box">
+
+						<!-- edoge -->
+						<i class="crypto-icon.edoge">edoge</i>
+
+					</div>
+					<h2>edoge</h2>
+				</li>
+				<li title="elf">
+					<div class="icon-box">
+
+						<!-- elf -->
+						<i class="crypto-icon.elf">elf</i>
+
+					</div>
+					<h2>elf</h2>
+				</li>
+				<li title="ella">
+					<div class="icon-box">
+
+						<!-- ella -->
+						<i class="crypto-icon.ella">ella</i>
+
+					</div>
+					<h2>ella</h2>
+				</li>
+				<li title="emc">
+					<div class="icon-box">
+
+						<!-- emc -->
+						<i class="crypto-icon.emc">emc</i>
+
+					</div>
+					<h2>emc</h2>
+				</li>
+				<li title="emc2">
+					<div class="icon-box">
+
+						<!-- emc2 -->
+						<i class="crypto-icon.emc2">emc2</i>
+
+					</div>
+					<h2>emc2</h2>
+				</li>
+				<li title="eng">
+					<div class="icon-box">
+
+						<!-- eng -->
+						<i class="crypto-icon.eng">eng</i>
+
+					</div>
+					<h2>eng</h2>
+				</li>
+				<li title="eos">
+					<div class="icon-box">
+
+						<!-- eos -->
+						<i class="crypto-icon.eos">eos</i>
+
+					</div>
+					<h2>eos</h2>
+				</li>
+				<li title="etc">
+					<div class="icon-box">
+
+						<!-- etc -->
+						<i class="crypto-icon.etc">etc</i>
+
+					</div>
+					<h2>etc</h2>
+				</li>
+				<li title="eth">
+					<div class="icon-box">
+
+						<!-- eth -->
+						<i class="crypto-icon.eth">eth</i>
+
+					</div>
+					<h2>eth</h2>
+				</li>
+				<li title="ethos">
+					<div class="icon-box">
+
+						<!-- ethos -->
+						<i class="crypto-icon.ethos">ethos</i>
+
+					</div>
+					<h2>ethos</h2>
+				</li>
+				<li title="etn">
+					<div class="icon-box">
+
+						<!-- etn -->
+						<i class="crypto-icon.etn">etn</i>
+
+					</div>
+					<h2>etn</h2>
+				</li>
+				<li title="etp">
+					<div class="icon-box">
+
+						<!-- etp -->
+						<i class="crypto-icon.etp">etp</i>
+
+					</div>
+					<h2>etp</h2>
+				</li>
+				<li title="eur">
+					<div class="icon-box">
+
+						<!-- eur -->
+						<i class="crypto-icon.eur">eur</i>
+
+					</div>
+					<h2>eur</h2>
+				</li>
+				<li title="evx">
+					<div class="icon-box">
+
+						<!-- evx -->
+						<i class="crypto-icon.evx">evx</i>
+
+					</div>
+					<h2>evx</h2>
+				</li>
+				<li title="exmo">
+					<div class="icon-box">
+
+						<!-- exmo -->
+						<i class="crypto-icon.exmo">exmo</i>
+
+					</div>
+					<h2>exmo</h2>
+				</li>
+				<li title="exp">
+					<div class="icon-box">
+
+						<!-- exp -->
+						<i class="crypto-icon.exp">exp</i>
+
+					</div>
+					<h2>exp</h2>
+				</li>
+				<li title="fair">
+					<div class="icon-box">
+
+						<!-- fair -->
+						<i class="crypto-icon.fair">fair</i>
+
+					</div>
+					<h2>fair</h2>
+				</li>
+				<li title="fct">
+					<div class="icon-box">
+
+						<!-- fct -->
+						<i class="crypto-icon.fct">fct</i>
+
+					</div>
+					<h2>fct</h2>
+				</li>
+				<li title="fil">
+					<div class="icon-box">
+
+						<!-- fil -->
+						<i class="crypto-icon.fil">fil</i>
+
+					</div>
+					<h2>fil</h2>
+				</li>
+				<li title="fldc">
+					<div class="icon-box">
+
+						<!-- fldc -->
+						<i class="crypto-icon.fldc">fldc</i>
+
+					</div>
+					<h2>fldc</h2>
+				</li>
+				<li title="flo">
+					<div class="icon-box">
+
+						<!-- flo -->
+						<i class="crypto-icon.flo">flo</i>
+
+					</div>
+					<h2>flo</h2>
+				</li>
+				<li title="ftc">
+					<div class="icon-box">
+
+						<!-- ftc -->
+						<i class="crypto-icon.ftc">ftc</i>
+
+					</div>
+					<h2>ftc</h2>
+				</li>
+				<li title="fun">
+					<div class="icon-box">
+
+						<!-- fun -->
+						<i class="crypto-icon.fun">fun</i>
+
+					</div>
+					<h2>fun</h2>
+				</li>
+				<li title="game">
+					<div class="icon-box">
+
+						<!-- game -->
+						<i class="crypto-icon.game">game</i>
+
+					</div>
+					<h2>game</h2>
+				</li>
+				<li title="gas">
+					<div class="icon-box">
+
+						<!-- gas -->
+						<i class="crypto-icon.gas">gas</i>
+
+					</div>
+					<h2>gas</h2>
+				</li>
+				<li title="gbp">
+					<div class="icon-box">
+
+						<!-- gbp -->
+						<i class="crypto-icon.gbp">gbp</i>
+
+					</div>
+					<h2>gbp</h2>
+				</li>
+				<li title="gbx">
+					<div class="icon-box">
+
+						<!-- gbx -->
+						<i class="crypto-icon.gbx">gbx</i>
+
+					</div>
+					<h2>gbx</h2>
+				</li>
+				<li title="gbyte">
+					<div class="icon-box">
+
+						<!-- gbyte -->
+						<i class="crypto-icon.gbyte">gbyte</i>
+
+					</div>
+					<h2>gbyte</h2>
+				</li>
+				<li title="gno">
+					<div class="icon-box">
+
+						<!-- gno -->
+						<i class="crypto-icon.gno">gno</i>
+
+					</div>
+					<h2>gno</h2>
+				</li>
+				<li title="gnt">
+					<div class="icon-box">
+
+						<!-- gnt -->
+						<i class="crypto-icon.gnt">gnt</i>
+
+					</div>
+					<h2>gnt</h2>
+				</li>
+				<li title="grc">
+					<div class="icon-box">
+
+						<!-- grc -->
+						<i class="crypto-icon.grc">grc</i>
+
+					</div>
+					<h2>grc</h2>
+				</li>
+				<li title="grs">
+					<div class="icon-box">
+
+						<!-- grs -->
+						<i class="crypto-icon.grs">grs</i>
+
+					</div>
+					<h2>grs</h2>
+				</li>
+				<li title="gup">
+					<div class="icon-box">
+
+						<!-- gup -->
+						<i class="crypto-icon.gup">gup</i>
+
+					</div>
+					<h2>gup</h2>
+				</li>
+				<li title="gvt">
+					<div class="icon-box">
+
+						<!-- gvt -->
+						<i class="crypto-icon.gvt">gvt</i>
+
+					</div>
+					<h2>gvt</h2>
+				</li>
+				<li title="gxs">
+					<div class="icon-box">
+
+						<!-- gxs -->
+						<i class="crypto-icon.gxs">gxs</i>
+
+					</div>
+					<h2>gxs</h2>
+				</li>
+				<li title="hpb">
+					<div class="icon-box">
+
+						<!-- hpb -->
+						<i class="crypto-icon.hpb">hpb</i>
+
+					</div>
+					<h2>hpb</h2>
+				</li>
+				<li title="hsr">
+					<div class="icon-box">
+
+						<!-- hsr -->
+						<i class="crypto-icon.hsr">hsr</i>
+
+					</div>
+					<h2>hsr</h2>
+				</li>
+				<li title="huc">
+					<div class="icon-box">
+
+						<!-- huc -->
+						<i class="crypto-icon.huc">huc</i>
+
+					</div>
+					<h2>huc</h2>
+				</li>
+				<li title="hush">
+					<div class="icon-box">
+
+						<!-- hush -->
+						<i class="crypto-icon.hush">hush</i>
+
+					</div>
+					<h2>hush</h2>
+				</li>
+				<li title="icn">
+					<div class="icon-box">
+
+						<!-- icn -->
+						<i class="crypto-icon.icn">icn</i>
+
+					</div>
+					<h2>icn</h2>
+				</li>
+				<li title="icx">
+					<div class="icon-box">
+
+						<!-- icx -->
+						<i class="crypto-icon.icx">icx</i>
+
+					</div>
+					<h2>icx</h2>
+				</li>
+				<li title="ignis">
+					<div class="icon-box">
+
+						<!-- ignis -->
+						<i class="crypto-icon.ignis">ignis</i>
+
+					</div>
+					<h2>ignis</h2>
+				</li>
+				<li title="ins">
+					<div class="icon-box">
+
+						<!-- ins -->
+						<i class="crypto-icon.ins">ins</i>
+
+					</div>
+					<h2>ins</h2>
+				</li>
+				<li title="iop">
+					<div class="icon-box">
+
+						<!-- iop -->
+						<i class="crypto-icon.iop">iop</i>
+
+					</div>
+					<h2>iop</h2>
+				</li>
+				<li title="iost">
+					<div class="icon-box">
+
+						<!-- iost -->
+						<i class="crypto-icon.iost">iost</i>
+
+					</div>
+					<h2>iost</h2>
+				</li>
+				<li title="jpy">
+					<div class="icon-box">
+
+						<!-- jpy -->
+						<i class="crypto-icon.jpy">jpy</i>
+
+					</div>
+					<h2>jpy</h2>
+				</li>
+				<li title="kcs">
+					<div class="icon-box">
+
+						<!-- kcs -->
+						<i class="crypto-icon.kcs">kcs</i>
+
+					</div>
+					<h2>kcs</h2>
+				</li>
+				<li title="kin">
+					<div class="icon-box">
+
+						<!-- kin -->
+						<i class="crypto-icon.kin">kin</i>
+
+					</div>
+					<h2>kin</h2>
+				</li>
+				<li title="kmd">
+					<div class="icon-box">
+
+						<!-- kmd -->
+						<i class="crypto-icon.kmd">kmd</i>
+
+					</div>
+					<h2>kmd</h2>
+				</li>
+				<li title="knc">
+					<div class="icon-box">
+
+						<!-- knc -->
+						<i class="crypto-icon.knc">knc</i>
+
+					</div>
+					<h2>knc</h2>
+				</li>
+				<li title="krb">
+					<div class="icon-box">
+
+						<!-- krb -->
+						<i class="crypto-icon.krb">krb</i>
+
+					</div>
+					<h2>krb</h2>
+				</li>
+				<li title="lbc">
+					<div class="icon-box">
+
+						<!-- lbc -->
+						<i class="crypto-icon.lbc">lbc</i>
+
+					</div>
+					<h2>lbc</h2>
+				</li>
+				<li title="link">
+					<div class="icon-box">
+
+						<!-- link -->
+						<i class="crypto-icon.link">link</i>
+
+					</div>
+					<h2>link</h2>
+				</li>
+				<li title="lkk">
+					<div class="icon-box">
+
+						<!-- lkk -->
+						<i class="crypto-icon.lkk">lkk</i>
+
+					</div>
+					<h2>lkk</h2>
+				</li>
+				<li title="lrc">
+					<div class="icon-box">
+
+						<!-- lrc -->
+						<i class="crypto-icon.lrc">lrc</i>
+
+					</div>
+					<h2>lrc</h2>
+				</li>
+				<li title="lsk">
+					<div class="icon-box">
+
+						<!-- lsk -->
+						<i class="crypto-icon.lsk">lsk</i>
+
+					</div>
+					<h2>lsk</h2>
+				</li>
+				<li title="ltc">
+					<div class="icon-box">
+
+						<!-- ltc -->
+						<i class="crypto-icon.ltc">ltc</i>
+
+					</div>
+					<h2>ltc</h2>
+				</li>
+				<li title="maid">
+					<div class="icon-box">
+
+						<!-- maid -->
+						<i class="crypto-icon.maid">maid</i>
+
+					</div>
+					<h2>maid</h2>
+				</li>
+				<li title="mana">
+					<div class="icon-box">
+
+						<!-- mana -->
+						<i class="crypto-icon.mana">mana</i>
+
+					</div>
+					<h2>mana</h2>
+				</li>
+				<li title="mcap">
+					<div class="icon-box">
+
+						<!-- mcap -->
+						<i class="crypto-icon.mcap">mcap</i>
+
+					</div>
+					<h2>mcap</h2>
+				</li>
+				<li title="mco">
+					<div class="icon-box">
+
+						<!-- mco -->
+						<i class="crypto-icon.mco">mco</i>
+
+					</div>
+					<h2>mco</h2>
+				</li>
+				<li title="med">
+					<div class="icon-box">
+
+						<!-- med -->
+						<i class="crypto-icon.med">med</i>
+
+					</div>
+					<h2>med</h2>
+				</li>
+				<li title="miota">
+					<div class="icon-box">
+
+						<!-- miota -->
+						<i class="crypto-icon.miota">miota</i>
+
+					</div>
+					<h2>miota</h2>
+				</li>
+				<li title="mkr">
+					<div class="icon-box">
+
+						<!-- mkr -->
+						<i class="crypto-icon.mkr">mkr</i>
+
+					</div>
+					<h2>mkr</h2>
+				</li>
+				<li title="mln">
+					<div class="icon-box">
+
+						<!-- mln -->
+						<i class="crypto-icon.mln">mln</i>
+
+					</div>
+					<h2>mln</h2>
+				</li>
+				<li title="mnx">
+					<div class="icon-box">
+
+						<!-- mnx -->
+						<i class="crypto-icon.mnx">mnx</i>
+
+					</div>
+					<h2>mnx</h2>
+				</li>
+				<li title="mona">
+					<div class="icon-box">
+
+						<!-- mona -->
+						<i class="crypto-icon.mona">mona</i>
+
+					</div>
+					<h2>mona</h2>
+				</li>
+				<li title="mtl">
+					<div class="icon-box">
+
+						<!-- mtl -->
+						<i class="crypto-icon.mtl">mtl</i>
+
+					</div>
+					<h2>mtl</h2>
+				</li>
+				<li title="music">
+					<div class="icon-box">
+
+						<!-- music -->
+						<i class="crypto-icon.music">music</i>
+
+					</div>
+					<h2>music</h2>
+				</li>
+				<li title="nas">
+					<div class="icon-box">
+
+						<!-- nas -->
+						<i class="crypto-icon.nas">nas</i>
+
+					</div>
+					<h2>nas</h2>
+				</li>
+				<li title="nav">
+					<div class="icon-box">
+
+						<!-- nav -->
+						<i class="crypto-icon.nav">nav</i>
+
+					</div>
+					<h2>nav</h2>
+				</li>
+				<li title="ndz">
+					<div class="icon-box">
+
+						<!-- ndz -->
+						<i class="crypto-icon.ndz">ndz</i>
+
+					</div>
+					<h2>ndz</h2>
+				</li>
+				<li title="nebl">
+					<div class="icon-box">
+
+						<!-- nebl -->
+						<i class="crypto-icon.nebl">nebl</i>
+
+					</div>
+					<h2>nebl</h2>
+				</li>
+				<li title="neo">
+					<div class="icon-box">
+
+						<!-- neo -->
+						<i class="crypto-icon.neo">neo</i>
+
+					</div>
+					<h2>neo</h2>
+				</li>
+				<li title="neos">
+					<div class="icon-box">
+
+						<!-- neos -->
+						<i class="crypto-icon.neos">neos</i>
+
+					</div>
+					<h2>neos</h2>
+				</li>
+				<li title="ngc">
+					<div class="icon-box">
+
+						<!-- ngc -->
+						<i class="crypto-icon.ngc">ngc</i>
+
+					</div>
+					<h2>ngc</h2>
+				</li>
+				<li title="nlc2">
+					<div class="icon-box">
+
+						<!-- nlc2 -->
+						<i class="crypto-icon.nlc2">nlc2</i>
+
+					</div>
+					<h2>nlc2</h2>
+				</li>
+				<li title="nlg">
+					<div class="icon-box">
+
+						<!-- nlg -->
+						<i class="crypto-icon.nlg">nlg</i>
+
+					</div>
+					<h2>nlg</h2>
+				</li>
+				<li title="nmc">
+					<div class="icon-box">
+
+						<!-- nmc -->
+						<i class="crypto-icon.nmc">nmc</i>
+
+					</div>
+					<h2>nmc</h2>
+				</li>
+				<li title="nxs">
+					<div class="icon-box">
+
+						<!-- nxs -->
+						<i class="crypto-icon.nxs">nxs</i>
+
+					</div>
+					<h2>nxs</h2>
+				</li>
+				<li title="nxt">
+					<div class="icon-box">
+
+						<!-- nxt -->
+						<i class="crypto-icon.nxt">nxt</i>
+
+					</div>
+					<h2>nxt</h2>
+				</li>
+				<li title="omg">
+					<div class="icon-box">
+
+						<!-- omg -->
+						<i class="crypto-icon.omg">omg</i>
+
+					</div>
+					<h2>omg</h2>
+				</li>
+				<li title="omni">
+					<div class="icon-box">
+
+						<!-- omni -->
+						<i class="crypto-icon.omni">omni</i>
+
+					</div>
+					<h2>omni</h2>
+				</li>
+				<li title="ost">
+					<div class="icon-box">
+
+						<!-- ost -->
+						<i class="crypto-icon.ost">ost</i>
+
+					</div>
+					<h2>ost</h2>
+				</li>
+				<li title="ox">
+					<div class="icon-box">
+
+						<!-- ox -->
+						<i class="crypto-icon.ox">ox</i>
+
+					</div>
+					<h2>ox</h2>
+				</li>
+				<li title="pac">
+					<div class="icon-box">
+
+						<!-- pac -->
+						<i class="crypto-icon.pac">pac</i>
+
+					</div>
+					<h2>pac</h2>
+				</li>
+				<li title="part">
+					<div class="icon-box">
+
+						<!-- part -->
+						<i class="crypto-icon.part">part</i>
+
+					</div>
+					<h2>part</h2>
+				</li>
+				<li title="pasl">
+					<div class="icon-box">
+
+						<!-- pasl -->
+						<i class="crypto-icon.pasl">pasl</i>
+
+					</div>
+					<h2>pasl</h2>
+				</li>
+				<li title="pay">
+					<div class="icon-box">
+
+						<!-- pay -->
+						<i class="crypto-icon.pay">pay</i>
+
+					</div>
+					<h2>pay</h2>
+				</li>
+				<li title="pink">
+					<div class="icon-box">
+
+						<!-- pink -->
+						<i class="crypto-icon.pink">pink</i>
+
+					</div>
+					<h2>pink</h2>
+				</li>
+				<li title="pirl">
+					<div class="icon-box">
+
+						<!-- pirl -->
+						<i class="crypto-icon.pirl">pirl</i>
+
+					</div>
+					<h2>pirl</h2>
+				</li>
+				<li title="pivx">
+					<div class="icon-box">
+
+						<!-- pivx -->
+						<i class="crypto-icon.pivx">pivx</i>
+
+					</div>
+					<h2>pivx</h2>
+				</li>
+				<li title="plr">
+					<div class="icon-box">
+
+						<!-- plr -->
+						<i class="crypto-icon.plr">plr</i>
+
+					</div>
+					<h2>plr</h2>
+				</li>
+				<li title="poe">
+					<div class="icon-box">
+
+						<!-- poe -->
+						<i class="crypto-icon.poe">poe</i>
+
+					</div>
+					<h2>poe</h2>
+				</li>
+				<li title="pot">
+					<div class="icon-box">
+
+						<!-- pot -->
+						<i class="crypto-icon.pot">pot</i>
+
+					</div>
+					<h2>pot</h2>
+				</li>
+				<li title="powr">
+					<div class="icon-box">
+
+						<!-- powr -->
+						<i class="crypto-icon.powr">powr</i>
+
+					</div>
+					<h2>powr</h2>
+				</li>
+				<li title="ppc">
+					<div class="icon-box">
+
+						<!-- ppc -->
+						<i class="crypto-icon.ppc">ppc</i>
+
+					</div>
+					<h2>ppc</h2>
+				</li>
+				<li title="ppp">
+					<div class="icon-box">
+
+						<!-- ppp -->
+						<i class="crypto-icon.ppp">ppp</i>
+
+					</div>
+					<h2>ppp</h2>
+				</li>
+				<li title="ppt">
+					<div class="icon-box">
+
+						<!-- ppt -->
+						<i class="crypto-icon.ppt">ppt</i>
+
+					</div>
+					<h2>ppt</h2>
+				</li>
+				<li title="prl">
+					<div class="icon-box">
+
+						<!-- prl -->
+						<i class="crypto-icon.prl">prl</i>
+
+					</div>
+					<h2>prl</h2>
+				</li>
+				<li title="pura">
+					<div class="icon-box">
+
+						<!-- pura -->
+						<i class="crypto-icon.pura">pura</i>
+
+					</div>
+					<h2>pura</h2>
+				</li>
+				<li title="qash">
+					<div class="icon-box">
+
+						<!-- qash -->
+						<i class="crypto-icon.qash">qash</i>
+
+					</div>
+					<h2>qash</h2>
+				</li>
+				<li title="qiwi">
+					<div class="icon-box">
+
+						<!-- qiwi -->
+						<i class="crypto-icon.qiwi">qiwi</i>
+
+					</div>
+					<h2>qiwi</h2>
+				</li>
+				<li title="qlc">
+					<div class="icon-box">
+
+						<!-- qlc -->
+						<i class="crypto-icon.qlc">qlc</i>
+
+					</div>
+					<h2>qlc</h2>
+				</li>
+				<li title="qsp">
+					<div class="icon-box">
+
+						<!-- qsp -->
+						<i class="crypto-icon.qsp">qsp</i>
+
+					</div>
+					<h2>qsp</h2>
+				</li>
+				<li title="qtum">
+					<div class="icon-box">
+
+						<!-- qtum -->
+						<i class="crypto-icon.qtum">qtum</i>
+
+					</div>
+					<h2>qtum</h2>
+				</li>
+				<li title="rads">
+					<div class="icon-box">
+
+						<!-- rads -->
+						<i class="crypto-icon.rads">rads</i>
+
+					</div>
+					<h2>rads</h2>
+				</li>
+				<li title="rcn">
+					<div class="icon-box">
+
+						<!-- rcn -->
+						<i class="crypto-icon.rcn">rcn</i>
+
+					</div>
+					<h2>rcn</h2>
+				</li>
+				<li title="rdd">
+					<div class="icon-box">
+
+						<!-- rdd -->
+						<i class="crypto-icon.rdd">rdd</i>
+
+					</div>
+					<h2>rdd</h2>
+				</li>
+				<li title="rdn">
+					<div class="icon-box">
+
+						<!-- rdn -->
+						<i class="crypto-icon.rdn">rdn</i>
+
+					</div>
+					<h2>rdn</h2>
+				</li>
+				<li title="rep">
+					<div class="icon-box">
+
+						<!-- rep -->
+						<i class="crypto-icon.rep">rep</i>
+
+					</div>
+					<h2>rep</h2>
+				</li>
+				<li title="req">
+					<div class="icon-box">
+
+						<!-- req -->
+						<i class="crypto-icon.req">req</i>
+
+					</div>
+					<h2>req</h2>
+				</li>
+				<li title="rhoc">
+					<div class="icon-box">
+
+						<!-- rhoc -->
+						<i class="crypto-icon.rhoc">rhoc</i>
+
+					</div>
+					<h2>rhoc</h2>
+				</li>
+				<li title="ric">
+					<div class="icon-box">
+
+						<!-- ric -->
+						<i class="crypto-icon.ric">ric</i>
+
+					</div>
+					<h2>ric</h2>
+				</li>
+				<li title="rise">
+					<div class="icon-box">
+
+						<!-- rise -->
+						<i class="crypto-icon.rise">rise</i>
+
+					</div>
+					<h2>rise</h2>
+				</li>
+				<li title="rlc">
+					<div class="icon-box">
+
+						<!-- rlc -->
+						<i class="crypto-icon.rlc">rlc</i>
+
+					</div>
+					<h2>rlc</h2>
+				</li>
+				<li title="rpx">
+					<div class="icon-box">
+
+						<!-- rpx -->
+						<i class="crypto-icon.rpx">rpx</i>
+
+					</div>
+					<h2>rpx</h2>
+				</li>
+				<li title="rub">
+					<div class="icon-box">
+
+						<!-- rub -->
+						<i class="crypto-icon.rub">rub</i>
+
+					</div>
+					<h2>rub</h2>
+				</li>
+				<li title="salt">
+					<div class="icon-box">
+
+						<!-- salt -->
+						<i class="crypto-icon.salt">salt</i>
+
+					</div>
+					<h2>salt</h2>
+				</li>
+				<li title="san">
+					<div class="icon-box">
+
+						<!-- san -->
+						<i class="crypto-icon.san">san</i>
+
+					</div>
+					<h2>san</h2>
+				</li>
+				<li title="sbd">
+					<div class="icon-box">
+
+						<!-- sbd -->
+						<i class="crypto-icon.sbd">sbd</i>
+
+					</div>
+					<h2>sbd</h2>
+				</li>
+				<li title="sberbank">
+					<div class="icon-box">
+
+						<!-- sberbank -->
+						<i class="crypto-icon.sberbank">sberbank</i>
+
+					</div>
+					<h2>sberbank</h2>
+				</li>
+				<li title="sc">
+					<div class="icon-box">
+
+						<!-- sc -->
+						<i class="crypto-icon.sc">sc</i>
+
+					</div>
+					<h2>sc</h2>
+				</li>
+				<li title="sky">
+					<div class="icon-box">
+
+						<!-- sky -->
+						<i class="crypto-icon.sky">sky</i>
+
+					</div>
+					<h2>sky</h2>
+				</li>
+				<li title="smart">
+					<div class="icon-box">
+
+						<!-- smart -->
+						<i class="crypto-icon.smart">smart</i>
+
+					</div>
+					<h2>smart</h2>
+				</li>
+				<li title="sngls">
+					<div class="icon-box">
+
+						<!-- sngls -->
+						<i class="crypto-icon.sngls">sngls</i>
+
+					</div>
+					<h2>sngls</h2>
+				</li>
+				<li title="snt">
+					<div class="icon-box">
+
+						<!-- snt -->
+						<i class="crypto-icon.snt">snt</i>
+
+					</div>
+					<h2>snt</h2>
+				</li>
+				<li title="sphtx">
+					<div class="icon-box">
+
+						<!-- sphtx -->
+						<i class="crypto-icon.sphtx">sphtx</i>
+
+					</div>
+					<h2>sphtx</h2>
+				</li>
+				<li title="srn">
+					<div class="icon-box">
+
+						<!-- srn -->
+						<i class="crypto-icon.srn">srn</i>
+
+					</div>
+					<h2>srn</h2>
+				</li>
+				<li title="start">
+					<div class="icon-box">
+
+						<!-- start -->
+						<i class="crypto-icon.start">start</i>
+
+					</div>
+					<h2>start</h2>
+				</li>
+				<li title="steem">
+					<div class="icon-box">
+
+						<!-- steem -->
+						<i class="crypto-icon.steem">steem</i>
+
+					</div>
+					<h2>steem</h2>
+				</li>
+				<li title="storj">
+					<div class="icon-box">
+
+						<!-- storj -->
+						<i class="crypto-icon.storj">storj</i>
+
+					</div>
+					<h2>storj</h2>
+				</li>
+				<li title="storm">
+					<div class="icon-box">
+
+						<!-- storm -->
+						<i class="crypto-icon.storm">storm</i>
+
+					</div>
+					<h2>storm</h2>
+				</li>
+				<li title="strat">
+					<div class="icon-box">
+
+						<!-- strat -->
+						<i class="crypto-icon.strat">strat</i>
+
+					</div>
+					<h2>strat</h2>
+				</li>
+				<li title="sub">
+					<div class="icon-box">
+
+						<!-- sub -->
+						<i class="crypto-icon.sub">sub</i>
+
+					</div>
+					<h2>sub</h2>
+				</li>
+				<li title="sys">
+					<div class="icon-box">
+
+						<!-- sys -->
+						<i class="crypto-icon.sys">sys</i>
+
+					</div>
+					<h2>sys</h2>
+				</li>
+				<li title="taas">
+					<div class="icon-box">
+
+						<!-- taas -->
+						<i class="crypto-icon.taas">taas</i>
+
+					</div>
+					<h2>taas</h2>
+				</li>
+				<li title="tau">
+					<div class="icon-box">
+
+						<!-- tau -->
+						<i class="crypto-icon.tau">tau</i>
+
+					</div>
+					<h2>tau</h2>
+				</li>
+				<li title="tix">
+					<div class="icon-box">
+
+						<!-- tix -->
+						<i class="crypto-icon.tix">tix</i>
+
+					</div>
+					<h2>tix</h2>
+				</li>
+				<li title="tkn">
+					<div class="icon-box">
+
+						<!-- tkn -->
+						<i class="crypto-icon.tkn">tkn</i>
+
+					</div>
+					<h2>tkn</h2>
+				</li>
+				<li title="tnc">
+					<div class="icon-box">
+
+						<!-- tnc -->
+						<i class="crypto-icon.tnc">tnc</i>
+
+					</div>
+					<h2>tnc</h2>
+				</li>
+				<li title="trig">
+					<div class="icon-box">
+
+						<!-- trig -->
+						<i class="crypto-icon.trig">trig</i>
+
+					</div>
+					<h2>trig</h2>
+				</li>
+				<li title="trx">
+					<div class="icon-box">
+
+						<!-- trx -->
+						<i class="crypto-icon.trx">trx</i>
+
+					</div>
+					<h2>trx</h2>
+				</li>
+				<li title="tzc">
+					<div class="icon-box">
+
+						<!-- tzc -->
+						<i class="crypto-icon.tzc">tzc</i>
+
+					</div>
+					<h2>tzc</h2>
+				</li>
+				<li title="ubq">
+					<div class="icon-box">
+
+						<!-- ubq -->
+						<i class="crypto-icon.ubq">ubq</i>
+
+					</div>
+					<h2>ubq</h2>
+				</li>
+				<li title="usd">
+					<div class="icon-box">
+
+						<!-- usd -->
+						<i class="crypto-icon.usd">usd</i>
+
+					</div>
+					<h2>usd</h2>
+				</li>
+				<li title="usdt">
+					<div class="icon-box">
+
+						<!-- usdt -->
+						<i class="crypto-icon.usdt">usdt</i>
+
+					</div>
+					<h2>usdt</h2>
+				</li>
+				<li title="ven">
+					<div class="icon-box">
+
+						<!-- ven -->
+						<i class="crypto-icon.ven">ven</i>
+
+					</div>
+					<h2>ven</h2>
+				</li>
+				<li title="veri">
+					<div class="icon-box">
+
+						<!-- veri -->
+						<i class="crypto-icon.veri">veri</i>
+
+					</div>
+					<h2>veri</h2>
+				</li>
+				<li title="via">
+					<div class="icon-box">
+
+						<!-- via -->
+						<i class="crypto-icon.via">via</i>
+
+					</div>
+					<h2>via</h2>
+				</li>
+				<li title="vivo">
+					<div class="icon-box">
+
+						<!-- vivo -->
+						<i class="crypto-icon.vivo">vivo</i>
+
+					</div>
+					<h2>vivo</h2>
+				</li>
+				<li title="vrc">
+					<div class="icon-box">
+
+						<!-- vrc -->
+						<i class="crypto-icon.vrc">vrc</i>
+
+					</div>
+					<h2>vrc</h2>
+				</li>
+				<li title="vtc">
+					<div class="icon-box">
+
+						<!-- vtc -->
+						<i class="crypto-icon.vtc">vtc</i>
+
+					</div>
+					<h2>vtc</h2>
+				</li>
+				<li title="wabi">
+					<div class="icon-box">
+
+						<!-- wabi -->
+						<i class="crypto-icon.wabi">wabi</i>
+
+					</div>
+					<h2>wabi</h2>
+				</li>
+				<li title="waves">
+					<div class="icon-box">
+
+						<!-- waves -->
+						<i class="crypto-icon.waves">waves</i>
+
+					</div>
+					<h2>waves</h2>
+				</li>
+				<li title="wax">
+					<div class="icon-box">
+
+						<!-- wax -->
+						<i class="crypto-icon.wax">wax</i>
+
+					</div>
+					<h2>wax</h2>
+				</li>
+				<li title="wtc">
+					<div class="icon-box">
+
+						<!-- wtc -->
+						<i class="crypto-icon.wtc">wtc</i>
+
+					</div>
+					<h2>wtc</h2>
+				</li>
+				<li title="xbc">
+					<div class="icon-box">
+
+						<!-- xbc -->
+						<i class="crypto-icon.xbc">xbc</i>
+
+					</div>
+					<h2>xbc</h2>
+				</li>
+				<li title="xcp">
+					<div class="icon-box">
+
+						<!-- xcp -->
+						<i class="crypto-icon.xcp">xcp</i>
+
+					</div>
+					<h2>xcp</h2>
+				</li>
+				<li title="xdn">
+					<div class="icon-box">
+
+						<!-- xdn -->
+						<i class="crypto-icon.xdn">xdn</i>
+
+					</div>
+					<h2>xdn</h2>
+				</li>
+				<li title="xem">
+					<div class="icon-box">
+
+						<!-- xem -->
+						<i class="crypto-icon.xem">xem</i>
+
+					</div>
+					<h2>xem</h2>
+				</li>
+				<li title="xlm">
+					<div class="icon-box">
+
+						<!-- xlm -->
+						<i class="crypto-icon.xlm">xlm</i>
+
+					</div>
+					<h2>xlm</h2>
+				</li>
+				<li title="xmg">
+					<div class="icon-box">
+
+						<!-- xmg -->
+						<i class="crypto-icon.xmg">xmg</i>
+
+					</div>
+					<h2>xmg</h2>
+				</li>
+				<li title="xmr">
+					<div class="icon-box">
+
+						<!-- xmr -->
+						<i class="crypto-icon.xmr">xmr</i>
+
+					</div>
+					<h2>xmr</h2>
+				</li>
+				<li title="xmy">
+					<div class="icon-box">
+
+						<!-- xmy -->
+						<i class="crypto-icon.xmy">xmy</i>
+
+					</div>
+					<h2>xmy</h2>
+				</li>
+				<li title="xp">
+					<div class="icon-box">
+
+						<!-- xp -->
+						<i class="crypto-icon.xp">xp</i>
+
+					</div>
+					<h2>xp</h2>
+				</li>
+				<li title="xpa">
+					<div class="icon-box">
+
+						<!-- xpa -->
+						<i class="crypto-icon.xpa">xpa</i>
+
+					</div>
+					<h2>xpa</h2>
+				</li>
+				<li title="xpm">
+					<div class="icon-box">
+
+						<!-- xpm -->
+						<i class="crypto-icon.xpm">xpm</i>
+
+					</div>
+					<h2>xpm</h2>
+				</li>
+				<li title="xrb">
+					<div class="icon-box">
+
+						<!-- xrb -->
+						<i class="crypto-icon.xrb">xrb</i>
+
+					</div>
+					<h2>xrb</h2>
+				</li>
+				<li title="xrp">
+					<div class="icon-box">
+
+						<!-- xrp -->
+						<i class="crypto-icon.xrp">xrp</i>
+
+					</div>
+					<h2>xrp</h2>
+				</li>
+				<li title="xtz">
+					<div class="icon-box">
+
+						<!-- xtz -->
+						<i class="crypto-icon.xtz">xtz</i>
+
+					</div>
+					<h2>xtz</h2>
+				</li>
+				<li title="xuc">
+					<div class="icon-box">
+
+						<!-- xuc -->
+						<i class="crypto-icon.xuc">xuc</i>
+
+					</div>
+					<h2>xuc</h2>
+				</li>
+				<li title="xvc">
+					<div class="icon-box">
+
+						<!-- xvc -->
+						<i class="crypto-icon.xvc">xvc</i>
+
+					</div>
+					<h2>xvc</h2>
+				</li>
+				<li title="xvg">
+					<div class="icon-box">
+
+						<!-- xvg -->
+						<i class="crypto-icon.xvg">xvg</i>
+
+					</div>
+					<h2>xvg</h2>
+				</li>
+				<li title="xzc">
+					<div class="icon-box">
+
+						<!-- xzc -->
+						<i class="crypto-icon.xzc">xzc</i>
+
+					</div>
+					<h2>xzc</h2>
+				</li>
+				<li title="zcl">
+					<div class="icon-box">
+
+						<!-- zcl -->
+						<i class="crypto-icon.zcl">zcl</i>
+
+					</div>
+					<h2>zcl</h2>
+				</li>
+				<li title="zec">
+					<div class="icon-box">
+
+						<!-- zec -->
+						<i class="crypto-icon.zec">zec</i>
+
+					</div>
+					<h2>zec</h2>
+				</li>
+				<li title="zen">
+					<div class="icon-box">
+
+						<!-- zen -->
+						<i class="crypto-icon.zen">zen</i>
+
+					</div>
+					<h2>zen</h2>
+				</li>
+				<li title="zrx">
+					<div class="icon-box">
+
+						<!-- zrx -->
+						<i class="crypto-icon.zrx">zrx</i>
+
+					</div>
+					<h2>zrx</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Wed, 14 Feb 2018 10:04:15 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>

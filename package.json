@@ -11,6 +11,7 @@
   "description": "A webfont for cryptocurrency symbols",
   "main": "dist/cryptocurrency-icons.css",
   "devDependencies": {
+    "gulp-svg-sprite": "^1.3.7"
   },
   "keywords": [
     "cryptocurrency",
