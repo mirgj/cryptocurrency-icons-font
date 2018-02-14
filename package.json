@@ -1,6 +1,6 @@
 {
   "name": "cryptocurrency-icons-font",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-iconfont": "^9.1.0",
