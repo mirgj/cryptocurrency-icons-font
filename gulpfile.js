@@ -24,7 +24,7 @@ gulp.task('webfont', function () {
       fontHeight: 1001,
       descent: 200,
      }),
-    gulp.dest('dist/'),
+    gulp.dest('dist/webfont/'),
   ]);
 });
 
