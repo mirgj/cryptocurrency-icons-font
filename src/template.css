@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "<%= fontName %>";
+  font-style: normal;
+  font-weight: 400;
+  src: url(<%= fontPath %><%= fontName %>.eot);
+  src: 
+    url('<%= fontPath %><%= fontName %>.woff2') format('woff2'), 
+    url('<%= fontPath %><%= fontName %>.woff') format('woff'), 
+    url('<%= fontPath %><%= fontName %>.ttf') format('truetype');
+}
+
+.<%= cssClass %>::before {
+  font-family: "<%= fontName %>";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+.<%= cssClass %>.inactive { color: rgba(0, 0, 0, 0.26); }
+
+<% _.each(gsl, function(g) { %>
+.<%= cssClass %>.<%= g.fileName %>::before {
+  content: "\<%= g.codePoint %>";
+}
+<% }); %>

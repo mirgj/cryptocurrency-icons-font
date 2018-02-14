@@ -1,0 +1,34 @@
+{
+  "name": "cryptocurrency-icons-font",
+  "version": "0.1.1",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-iconfont": "^9.1.0",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-svgmin": "^1.2.4",
+    "pump": "^3.0.0"
+  },
+  "description": "A webfont for the cryptocurrency symbols",
+  "main": "dist/cryptocurrency-icons.css",
+  "devDependencies": {
+  },
+  "keywords": [
+    "cryptocurrency",
+    "font",
+    "webfont",
+    "ui",
+    "design",
+    "css",
+    "icons"
+  ],
+  "author": "mirgj <mirgj@outlook.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirgj/cryptocurrency-icons-font.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mirgj/cryptocurrency-icons-font/issues"
+  },
+  "homepage": "https://github.com/mirgj/cryptocurrency-icons-font#readme"
+}
