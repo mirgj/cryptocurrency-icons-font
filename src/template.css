@@ -25,7 +25,7 @@
 }
 .<%= cssClass %>.inactive { color: rgba(0, 0, 0, 0.26); }
 
-<% _.each(gsl, function(g) { %>
+<% _.each(glyphs, function(g) { %>
 .<%= cssClass %>.<%= g.fileName %>::before {
   content: "\<%= g.codePoint %>";
 }

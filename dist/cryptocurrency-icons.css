@@ -2,12 +2,13 @@
   font-family: "cryptocurrency-icons";
   font-style: normal;
   font-weight: 400;
-  src: url('cryptocurrency-icons.woff2') format('woff2'), 
+  src: url(cryptocurrency-icons.eot);
+  src: 
+    url('cryptocurrency-icons.woff2') format('woff2'), 
     url('cryptocurrency-icons.woff') format('woff'), 
     url('cryptocurrency-icons.ttf') format('truetype');
 }
 
-/* .crypto-icon:before { */
 .crypto-icon::before {
   font-family: "cryptocurrency-icons";
     -webkit-font-smoothing: antialiased;

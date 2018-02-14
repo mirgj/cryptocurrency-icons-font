@@ -8,7 +8,7 @@
     "gulp-svgmin": "^1.2.4",
     "pump": "^3.0.0"
   },
-  "description": "A webfont for the cryptocurrency symbols",
+  "description": "A webfont for cryptocurrency symbols",
   "main": "dist/cryptocurrency-icons.css",
   "devDependencies": {
   },
