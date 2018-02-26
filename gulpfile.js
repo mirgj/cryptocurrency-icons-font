@@ -5,6 +5,7 @@ var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var svgSprite = require('gulp-svg-sprite');
 var fontName = 'cryptocurrency-icons';
+var cheerio = require('gulp-cheerio');
 
 gulp.task('webfont', function () {
   pump([
@@ -45,4 +46,19 @@ gulp.task('svg-sprite', function() {
     .pipe(gulp.dest('dist/svg-sprite/'));
 });
 
-gulp.task('default', ['webfont', 'svg-sprite']);
+/** fixed wrong svg-sprite output  **/
+gulp.task('update-svg-sprite-sample', function () {
+  return gulp
+    .src(['dist/svg-sprite/css/sprite.css.html'])
+    .pipe(cheerio(function ($, file) {
+      $('.icon-box').each(function () {
+        var i = $(this).children();
+        var currentClass = i.attr('class');
+
+        i.attr('class', currentClass.replace('.', ' '));
+      });
+    }))
+    .pipe(gulp.dest('dist/svg-sprite/css/'));
+});
+
+gulp.task('default', ['webfont', 'svg-sprite', 'update-svg-sprite-sample']);
