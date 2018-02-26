@@ -8,7 +8,7 @@ var fontName = 'cryptocurrency-icons';
 
 gulp.task('webfont', function () {
   pump([
-    gulp.src('src/svg/*.svg'),
+    gulp.src('src/svg/black/*.svg'),
     iconfontCss({
       fontName: fontName,
       path: 'src/template.css',
