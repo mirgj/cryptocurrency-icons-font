@@ -4,11 +4,15 @@ var pump = require('pump');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var svgSprite = require('gulp-svg-sprite');
-var fontName = 'cryptocurrency-icons';
 var cheerio = require('gulp-cheerio');
+var clean = require('gulp-clean');
+var rename = require('gulp-rename');
+var runSequence = require('run-sequence');
+
+var fontName = 'cryptocurrency-icons';
 
 gulp.task('webfont', function () {
-  pump([
+  return pump([
     gulp.src('src/svg/black/*.svg'),
     iconfontCss({
       fontName: fontName,
@@ -30,11 +34,11 @@ gulp.task('webfont', function () {
 });
 
 gulp.task('svg-sprite', function() {
-  gulp.src('src/svg/*.svg')
+  return gulp.src('src/svg/black/*.svg')
     .pipe(svgSprite({
       mode: {
         css: {
-          prefix: ".crypto-icon.%s",
+          prefix: '.crypto-icon.%s',
           dimensions: false,
           render: {
             css: true
@@ -43,13 +47,13 @@ gulp.task('svg-sprite', function() {
         }
       }
     }))
-    .pipe(gulp.dest('dist/svg-sprite/'));
+    .pipe(gulp.dest('dist/svg-sprite'));
 });
 
 /** fixed wrong svg-sprite output  **/
 gulp.task('update-svg-sprite-sample', function () {
   return gulp
-    .src(['dist/svg-sprite/css/sprite.css.html'])
+    .src('dist/svg-sprite/css/sprite.css.html')
     .pipe(cheerio(function ($, file) {
       $('.icon-box').each(function () {
         var i = $(this).children();
@@ -58,7 +62,16 @@ gulp.task('update-svg-sprite-sample', function () {
         i.attr('class', currentClass.replace('.', ' '));
       });
     }))
+    .pipe(rename('demo.html'))
     .pipe(gulp.dest('dist/svg-sprite/css/'));
 });
 
-gulp.task('default', ['webfont', 'svg-sprite', 'update-svg-sprite-sample']);
+gulp.task('clean', function () {
+  return gulp
+    .src('dist/svg-sprite/css/sprite.css.html')
+    .pipe(clean({force: true}));
+});
+
+gulp.task('default', function(callback) {
+  runSequence('webfont', 'svg-sprite', 'update-svg-sprite-sample', 'clean', callback);
+});
