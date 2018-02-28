@@ -27,15 +27,20 @@ gulp.task('webfont', function () {
       formats: ['eot', 'ttf', 'woff', 'woff2'],
       normalize: true,
       fontHeight: 1001,
-      descent: 200,
+      descent: 200
      }),
     gulp.dest('dist/webfont/'),
   ]);
 });
 
 gulp.task('svg-sprite', function() {
-  return gulp.src('src/svg/black/*.svg')
+  return gulp.src('src/svg/*/*.svg')
     .pipe(svgSprite({
+      shape: {
+        id: {
+          separator: '.'
+        }
+      },
       mode: {
         css: {
           prefix: '.crypto-icon.%s',
@@ -59,7 +64,7 @@ gulp.task('update-svg-sprite-sample', function () {
         var i = $(this).children();
         var currentClass = i.attr('class');
 
-        i.attr('class', currentClass.replace('.', ' '));
+        i.attr('class', currentClass.split('.').join(' '));
       });
     }))
     .pipe(rename('demo.html'))
