@@ -23,7 +23,7 @@ The webfont is available and to you it you can take the demo file into _dist/web
 ```
 
 ### SVG Sprite
-The svg sprites are located into the folder _svg-sprite/css_ and there are three sprites for black, color and white.
+The svg sprites are located into the folder _dist/svg-sprite/css_ and there are three sprites for black, color and white.
 ```html
 <i class='crypto-icon black btc'>crypto-icon.black.btc</i>
 ```
