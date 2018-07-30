@@ -1138,194 +1138,198 @@
   content: "\E116";
 }
 
-.crypto-icon.tzc::before {
+.crypto-icon.tusd::before {
   content: "\E117";
 }
 
-.crypto-icon.ubq::before {
+.crypto-icon.tzc::before {
   content: "\E118";
 }
 
-.crypto-icon.unity::before {
+.crypto-icon.ubq::before {
   content: "\E119";
 }
 
-.crypto-icon.usd::before {
+.crypto-icon.unity::before {
   content: "\E11A";
 }
 
-.crypto-icon.usdt::before {
+.crypto-icon.usd::before {
   content: "\E11B";
 }
 
-.crypto-icon.utk::before {
+.crypto-icon.usdt::before {
   content: "\E11C";
 }
 
-.crypto-icon.ven::before {
+.crypto-icon.utk::before {
   content: "\E11D";
 }
 
-.crypto-icon.veri::before {
+.crypto-icon.ven::before {
   content: "\E11E";
 }
 
-.crypto-icon.via::before {
+.crypto-icon.veri::before {
   content: "\E11F";
 }
 
-.crypto-icon.vib::before {
+.crypto-icon.via::before {
   content: "\E120";
 }
 
-.crypto-icon.vibe::before {
+.crypto-icon.vib::before {
   content: "\E121";
 }
 
-.crypto-icon.vivo::before {
+.crypto-icon.vibe::before {
   content: "\E122";
 }
 
-.crypto-icon.vrc::before {
+.crypto-icon.vivo::before {
   content: "\E123";
 }
 
-.crypto-icon.vtc::before {
+.crypto-icon.vrc::before {
   content: "\E124";
 }
 
-.crypto-icon.wabi::before {
+.crypto-icon.vtc::before {
   content: "\E125";
 }
 
-.crypto-icon.wan::before {
+.crypto-icon.wabi::before {
   content: "\E126";
 }
 
-.crypto-icon.waves::before {
+.crypto-icon.wan::before {
   content: "\E127";
 }
 
-.crypto-icon.wax::before {
+.crypto-icon.waves::before {
   content: "\E128";
 }
 
-.crypto-icon.wgr::before {
+.crypto-icon.wax::before {
   content: "\E129";
 }
 
-.crypto-icon.wings::before {
+.crypto-icon.wgr::before {
   content: "\E12A";
 }
 
-.crypto-icon.wpr::before {
+.crypto-icon.wings::before {
   content: "\E12B";
 }
 
-.crypto-icon.wtc::before {
+.crypto-icon.wpr::before {
   content: "\E12C";
 }
 
-.crypto-icon.xas::before {
+.crypto-icon.wtc::before {
   content: "\E12D";
 }
 
-.crypto-icon.xbc::before {
+.crypto-icon.xas::before {
   content: "\E12E";
 }
 
-.crypto-icon.xby::before {
+.crypto-icon.xbc::before {
   content: "\E12F";
 }
 
-.crypto-icon.xcp::before {
+.crypto-icon.xby::before {
   content: "\E130";
 }
 
-.crypto-icon.xdn::before {
+.crypto-icon.xcp::before {
   content: "\E131";
 }
 
-.crypto-icon.xem::before {
+.crypto-icon.xdn::before {
   content: "\E132";
 }
 
-.crypto-icon.xlm::before {
+.crypto-icon.xem::before {
   content: "\E133";
 }
 
-.crypto-icon.xmg::before {
+.crypto-icon.xlm::before {
   content: "\E134";
 }
 
-.crypto-icon.xmr::before {
+.crypto-icon.xmg::before {
   content: "\E135";
 }
 
-.crypto-icon.xmy::before {
+.crypto-icon.xmr::before {
   content: "\E136";
 }
 
-.crypto-icon.xp::before {
+.crypto-icon.xmy::before {
   content: "\E137";
 }
 
-.crypto-icon.xpa::before {
+.crypto-icon.xp::before {
   content: "\E138";
 }
 
-.crypto-icon.xpm::before {
+.crypto-icon.xpa::before {
   content: "\E139";
 }
 
-.crypto-icon.xrp::before {
+.crypto-icon.xpm::before {
   content: "\E13A";
 }
 
-.crypto-icon.xtz::before {
+.crypto-icon.xrp::before {
   content: "\E13B";
 }
 
-.crypto-icon.xuc::before {
+.crypto-icon.xtz::before {
   content: "\E13C";
 }
 
-.crypto-icon.xvc::before {
+.crypto-icon.xuc::before {
   content: "\E13D";
 }
 
-.crypto-icon.xvg::before {
+.crypto-icon.xvc::before {
   content: "\E13E";
 }
 
-.crypto-icon.xzc::before {
+.crypto-icon.xvg::before {
   content: "\E13F";
 }
 
-.crypto-icon.yoyow::before {
+.crypto-icon.xzc::before {
   content: "\E140";
 }
 
-.crypto-icon.zcl::before {
+.crypto-icon.yoyow::before {
   content: "\E141";
 }
 
-.crypto-icon.zec::before {
+.crypto-icon.zcl::before {
   content: "\E142";
 }
 
-.crypto-icon.zel::before {
+.crypto-icon.zec::before {
   content: "\E143";
 }
 
-.crypto-icon.zen::before {
+.crypto-icon.zel::before {
   content: "\E144";
 }
 
-.crypto-icon.zil::before {
+.crypto-icon.zen::before {
   content: "\E145";
 }
 
-.crypto-icon.zrx::before {
+.crypto-icon.zil::before {
   content: "\E146";
+}
+
+.crypto-icon.zrx::before {
+  content: "\E147";
 }
