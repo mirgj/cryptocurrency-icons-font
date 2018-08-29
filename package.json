@@ -1,6 +1,8 @@
 {
   "name": "cryptocurrency-icons-font",
-  "scripts": {},
+  "scripts": {
+    "build": "./node_modules/.bin/gulp"
+  },
   "version": "0.2.1",
   "dependencies": {
     "gulp": "^3.9.1",
