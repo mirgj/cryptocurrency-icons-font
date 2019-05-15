@@ -7,7 +7,6 @@ var svgSprite = require("gulp-svg-sprite");
 var cheerio = require("gulp-cheerio");
 var clean = require("gulp-clean");
 var rename = require("gulp-rename");
-var runSequence = require("run-sequence");
 
 var fontName = "cryptocurrency-icons";
 
