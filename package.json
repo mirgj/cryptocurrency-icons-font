@@ -3,7 +3,7 @@
   "scripts": {
     "build": "./node_modules/.bin/gulp"
   },
-  "version": "0.5.2",
+  "version": "0.6.0",
   "dependencies": {
     "gulp": "^4.0.0",
     "gulp-iconfont": "^10.0.2",
