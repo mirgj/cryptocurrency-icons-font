@@ -82,10 +82,17 @@ gulp.task("clean", function() {
     .pipe(clean({ force: true }));
 });
 
+gulp.task("clearn-svg-folder", function() {
+  return gulp
+    .src("dist/svg-sprite/css/svg", { read: false })
+    .pipe(clean({ force: true }));
+});
+
 gulp.task(
   "default",
   gulp.series(
     "webfont",
+    "clearn-svg-folder",
     "svg-sprite",
     "update-svg-sprite-sample",
     "clean",
