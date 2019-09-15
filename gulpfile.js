@@ -11,25 +11,28 @@ var rename = require("gulp-rename");
 var fontName = "cryptocurrency-icons";
 
 gulp.task("webfont", function() {
-  return pump([
-    gulp.src("src/svg/black/*.svg"),
-    iconfontCss({
-      fontName: fontName,
-      path: "src/template.css",
-      targetPath: "cryptocurrency-icons.css",
-      fontPath: "",
-      cssClass: "crypto-icon"
-    }),
-    iconfont({
-      fontName: fontName,
-      prependUnicode: true,
-      formats: ["eot", "ttf", "woff", "woff2"],
-      normalize: true,
-      fontHeight: 1001,
-      descent: 200
-    }),
-    gulp.dest("dist/webfont/")
-  ]);
+  return gulp
+    .src("src/svg/black/*.svg")
+    .pipe(
+      iconfontCss({
+        fontName: fontName,
+        path: "src/template.css",
+        targetPath: "cryptocurrency-icons.css",
+        fontPath: "",
+        cssClass: "crypto-icon"
+      })
+    )
+    .pipe(
+      iconfont({
+        fontName: fontName,
+        prependUnicode: true,
+        formats: ["eot", "ttf", "woff", "woff2"],
+        normalize: true,
+        fontHeight: 1001,
+        descent: 200
+      })
+    )
+    .pipe(gulp.dest("dist/webfont/"));
 });
 
 gulp.task("svg-sprite", function() {
