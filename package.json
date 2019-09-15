@@ -3,7 +3,7 @@
   "scripts": {
     "build": "./node_modules/.bin/gulp"
   },
-  "version": "0.6.4",
+  "version": "0.6.5",
   "dependencies": {},
   "description": "A webfont for cryptocurrency symbols",
   "main": "dist/cryptocurrency-icons.css",
