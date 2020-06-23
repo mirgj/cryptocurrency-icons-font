@@ -11,6 +11,12 @@ You can install **cryptocurrency-icons-font** from npm
 npm install --save cryptocurrency-icons-font
 ```
 
+or using the github package
+
+```
+npm install --save @mirgj/cryptocurrency-icons-font
+```
+
 Or you can just clone this repository and get the files into the [dist](https://github.com/mirgj/cryptocurrency-icons-font/tree/master/dist) directory.
 ```
 git clone https://github.com/mirgj/cryptocurrency-icons-font.git

@@ -1,5 +1,5 @@
 {
-  "name": "cryptocurrency-icons-font",
+  "name": "@mirgj/cryptocurrency-icons-font",
   "scripts": {
     "build": "./node_modules/.bin/gulp"
   },
