@@ -6,7 +6,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "A webfont for cryptocurrency symbols",
   "main": "dist/cryptocurrency-icons.css",
   "dependencies": {},
