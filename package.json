@@ -7,17 +7,18 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "version": "0.6.7",
-  "dependencies": {},
   "description": "A webfont for cryptocurrency symbols",
   "main": "dist/cryptocurrency-icons.css",
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-cheerio": "^0.6.3",
+    "gulp-cheerio": "^1.0.0",
     "gulp-clean": "^0.4.0",
-    "gulp-iconfont": "^10.0.2",
+    "gulp-iconfont": "^11.0.0",
     "gulp-iconfont-css": "^3.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-svg-sprite": "^1.5.0"
+    "gulp-rename": "^2.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "pump": "^3.0.0"
   },
   "keywords": [
     "cryptocurrency",
